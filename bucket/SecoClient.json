@@ -1,0 +1,35 @@
+{
+    "version": "3.0.3.21",
+    "depends": "sudo",
+    "architecture": {
+        "64bit": {
+            
+            "url": "https://pans.xon.ink/d/Resources/Software%20%E8%BD%AF%E4%BB%B6/N-%E7%BD%91%E7%BB%9C%E4%BB%A3%E7%90%86%20Network%20proxy/SecoClient/secoclient-win-64-3.0.3.21.exe#/setup.exe",
+            "hash": "546d17de9e3da38aa1ea7da89b288138bafbdb7553e35487f296b818e0320120",
+            "installer": {
+                "script": "Start-Process -Wait \"$dir\\setup.exe\" \"/S\" -Verb RunAs"
+            },
+            "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\SecoClient.lnk\"",
+            "uninstaller": {
+                "script": [
+                    "Start-Process -Wait \"${env:ProgramFiles(x86)}\\SecoClient\\uninst.exe\" \"/S\" -Verb RunAs",
+                    "sudo Remove-Item -Recurse -Force \"${env:ProgramFiles(x86)}\\SecoClient\" "
+                ]
+            }
+        },
+        "32bit": {
+            "url": "https://pans.xon.ink/d/Resources/Software%20%E8%BD%AF%E4%BB%B6/N-%E7%BD%91%E7%BB%9C%E4%BB%A3%E7%90%86%20Network%20proxy/SecoClient/secoclient-win-32-3.0.3.21.exe#/setup.exe",
+            "hash": "0901c8cd03b7a97e1b92cb11dfcad44bdaaf51ceb7996a4cb9c0c08066bd9363",
+            "installer": {
+                "script": "Start-Process -Wait \"$dir\\setup.exe\" \"/S\" -Verb RunAs"
+            },
+            "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\SecoClient.lnk\"",
+            "uninstaller": {
+                "script": [
+                    "Start-Process -Wait \"${env:ProgramFiles}\\SecoClient\\uninst.exe\" \"/S\" -Verb RunAs",
+                    "sudo Remove-Item -Recurse -Force \"${env:ProgramFiles}\\SecoClient\" "
+                ]
+            }
+        }
+    }
+}
