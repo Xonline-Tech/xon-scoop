@@ -1,5 +1,5 @@
 {
-    "version": "0.20.12",
+    "version": "0.20.11",
     "description": "Clash for Windows 原版简体中文翻译补丁",
     "homepage": "https://github.com/BoyceLig/Clash_Chinese_Patch",
     "license": "Unknown",
@@ -8,8 +8,8 @@
         "软件仅供学习，24小时内删除"
     ],
     "depends": "xon-scoop/ClashForWindows-np",
-    "url": "https://github.com/BoyceLig/Clash_Chinese_Patch/releases/download/0.20.12/app.7z",
-    "hash": "eac4a1421ad503a6746ecdc1c8e4176bb49dcc52099e93fdd2914ce681268097",
+    "url": "https://github.com/BoyceLig/Clash_Chinese_Patch/releases/download/0.20.11/app.7z",
+    "hash": "cdbc4c6fff369d3cd10220075ef5be61e2631e3ada35b47d555c6b41b2e656f0",
     "installer": {
         "script": [
             "Get-Process clash* | Stop-Process",
