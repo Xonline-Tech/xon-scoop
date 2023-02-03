@@ -1,13 +1,13 @@
 {
-    "version": "3.2.1-13271",
+    "version": "3.2.1-13272",
     "description": "一台 Synology NAS，即可 打造您的专属私有云，无需额外费用，您可全权掌控自己的数据。",
     "homepage": "https://www.synology.cn/zh-cn/dsm/feature/drive",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.synology.com/en-global/company/legal/terms_EULA"
     },
-    "url": "https://global.download.synology.com/download/Utility/SynologyDriveClient/3.2.1-13271/Windows/Installer/Synology%20Drive%20Client-3.2.1-13271.msi",
-    "hash": "07299be4c9d08bf703b84915f89534585be7714b5f263205b1cdb43d02491321",
+    "url": "https://global.download.synology.com/download/Utility/SynologyDriveClient/3.2.1-13272/Windows/Installer/Synology%20Drive%20Client-3.2.1-13272.msi",
+    "hash": "c8ffb42c123bb88f72fa03373bad093fc41febd5b383b2f24eb9253414361b2f",
     "shortcuts": [
         [
             "Synology\\SynologyDrive\\bin\\launcher.exe",
