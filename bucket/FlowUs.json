@@ -1,0 +1,33 @@
+{
+    "homepage": "https://flowus.cn/product",
+    "description": "FlowUs 息流-新一代知识管理与协作平台 ",
+    "license": "https://flowus.cn/share/29651bee-1323-4f0a-a9ba-535832469fe0",
+    "version": "1.1.4",
+    "url": "https://desktopdownload.flowus.cn/production/windows/x64/FlowUs%20Setup%201.1.4.exe#dl.7z",
+    "hash": "e7890987d574bfd463724c088e9c0eb6bec2311772a0b4cb7a476b28d160a797",
+    "bin": "FlowUs.exe",
+    "persist": "users",
+    "installer": {
+        "script": [
+            "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"  | Out-Null",
+            "Copy-Item \"$dir\\`$R0\\Uninstall FlowUs.exe\" -Destination \"$dir\\\" -Force | Out-Null"
+        ]
+    },
+    "post_install": [
+        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
+        "Remove-Item \"$dir\\`$R0\" -Recurse"
+    ],
+    "checkver": {
+        "url": "https://flowus.cn/download",
+        "regex": "Windows 客户端</p>.+V<!-- -->(\\d+)</div>"
+    },
+    "autoupdate": {
+        "url": "https://desktopdownload.flowus.cn/production/windows/x64/FlowUs%20Setup%20$version.exe#dl.7z"
+    },
+    "shortcuts": [
+        [
+            "FlowUs.exe",
+            "FlowUs 息流"
+        ]
+    ]
+}
