@@ -1,5 +1,5 @@
 {
-    "version": "3.14.11.433",
+    "version": "3.14.12.401",
     "description": "Based on Tencent's 20 years of experience in audio and video communications, Tencent Meeting provides one-stop audio and video conferencing solutions that enable you to experience high-definition and smooth meetings and conference collaboration anytime and anywhere.",
     "homepage": "https://meeting.tencent.com/",
     "license": {
@@ -7,8 +7,8 @@
         "url": "https://meeting.tencent.com/declare.html"
     },
     "notes": "We don't persist your Tencent Meeting data, they are still storaged in \"$env:APPDATA\\Tencent\\WeMeet\".",
-    "url": "https://updatecdn.meeting.qq.com/cos/37d32826abd7266d56c10d3746ccac46/TencentMeeting_0300000000_3.14.11.433.publish.officialwebsite.exe#/dl.7z",
-    "hash": "e34e2f582f212444a8894efa1d770bf68a41eadc8527cd2819b63d64e21f7cf4",
+    "url": "https://updatecdn.meeting.qq.com/cos/71925f345157f18fff12ab53fddbbd17/TencentMeeting_0300000000_3.14.12.401.publish.officialwebsite.exe#/dl.7z",
+    "hash": "103c990a99bc4d1f69ae13b6bca70f7343055faa7713ecc4da1d24260206e8e8",
     "pre_install": "Rename-Item -Path \"$dir\\`$_*_\" -NewName \"$version\" -Force",
     "post_install": [
         "Remove-Item \"$dir\\$*\" -Recurse -Force -ErrorAction SilentlyContinue",
