@@ -33,7 +33,7 @@
     ],
     "checkver": {
         "url": "https://he3.app/",
-        "regex": "(\\d+)/He3_windows_installer"
+        "regex": "([\\d.]+)/He3_windows_installer"
     },
     "autoupdate": {
         "architecture": {

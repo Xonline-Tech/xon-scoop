@@ -19,7 +19,7 @@
     ],
     "checkver": {
         "url": "https://flowus.cn/download",
-        "regex": "Windows 客户端</p>.+V<!-- -->(\\d+)</div>"
+        "regex": "Windows 客户端</p>.+V<!-- -->([\\d.]+)</div>"
     },
     "autoupdate": {
         "url": "https://desktopdownload.flowus.cn/production/windows/x64/FlowUs%20Setup%20$version.exe#dl.7z"
