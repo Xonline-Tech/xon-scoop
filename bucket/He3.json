@@ -1,0 +1,48 @@
+{
+    "homepage": "https://he3.app",
+    "version": "1.2.1",
+    "license": "MIT",
+    "description": "A Free, Modern Toolbox, Built for Developers",
+    "architecture": {
+        "64bit": {
+            "url": "https://he3-1309519128.cos.accelerate.myqcloud.com/1.2.11/He3_windows_installer_x64_1.2.11.exe#dl.7z",
+            "hash": "d966c8faf8354c82b4ab6f987116372bcc24b692142bd70deb74b6e92edd59ea"
+        },
+        "32bit": {
+            "url": "https://he3-1309519128.cos.accelerate.myqcloud.com/1.2.11/He3_windows_installer_ia32_1.2.11.exe#dl.7z",
+            "hash": "ac769c62f4de8074fcd7fcb45cb0c4437647544e3ea63ba31218d5cd96799234"
+        }
+    },
+    "installer": {
+        "script": [
+            "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"  | Out-Null",
+            "Copy-Item \"$dir\\`$R0\\Uninstall He3.exe\" -Destination \"$dir\\\" -Force | Out-Null"
+        ]
+    },
+    "post_install": [
+        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
+        "Remove-Item \"$dir\\`$R0\" -Recurse"
+    ],
+    "bin": "He3.exe",
+    "persist": "users",
+    "shortcuts": [
+        [
+            "He3.exe",
+            "He3"
+        ]
+    ],
+    "checkver": {
+        "url": "https://he3.app/",
+        "regex": "(\\d+)/He3_windows_installer"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://he3-1309519128.cos.accelerate.myqcloud.com/$version/He3_windows_installer_x64_$version.exe#dl.7z"
+            },
+            "32bit": {
+                "url": "https://he3-1309519128.cos.accelerate.myqcloud.com/$version/He3_windows_installer_ia32_$version.exe#dl.7z"
+            }
+        }
+    }
+}
