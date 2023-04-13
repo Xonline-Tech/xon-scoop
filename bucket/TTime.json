@@ -1,0 +1,35 @@
+{
+    "homepage": "https://ttime.timerecord.cn",
+    "description": "一款简洁、高效、高颜值的输入、截图、划词翻译软件",
+    "license": "https://ttime.timerecord.cn/pages/1c1de2/",
+    "version": "0.0.5",
+    "url": "https://github.com/InkTimeRecord/TTime/releases/download/v0.0.5/TTime-0.0.5-setup.exe#dl.7z",
+    "hash": "7e9e7787f9c39c6fd0e35bea5d8fa53cddb8c08dac6fce88dc325e9882118e41",
+    "bin": "TTime.exe",
+    "persist": "users",
+    "installer": {
+        "script": [
+            "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"  | Out-Null",
+            "Copy-Item \"$dir\\`$R0\\Uninstall TTime.exe\" -Destination \"$dir\\\" -Force | Out-Null"
+        ]
+    },
+    "post_install": [
+        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
+        "Remove-Item \"$dir\\`$R0\" -Recurse"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+
+                "url": "https://github.com/InkTimeRecord/TTime/releases/download/v$version/TTime-$version-setup.exe#dl.7z"
+            }
+        }
+    },
+    "shortcuts": [
+        [
+            "TTime.exe",
+            "TTime"
+        ]
+    ]
+}
