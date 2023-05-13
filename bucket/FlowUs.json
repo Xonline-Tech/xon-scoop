@@ -2,9 +2,9 @@
     "homepage": "https://flowus.cn/product",
     "description": "FlowUs 息流-新一代知识管理与协作平台 ",
     "license": "https://flowus.cn/share/29651bee-1323-4f0a-a9ba-535832469fe0",
-    "version": "1.1.5",
-    "url": "https://desktopdownload.flowus.cn/production/windows/x64/FlowUs%20Setup%201.1.5.exe#dl.7z",
-    "hash": "c2f660ca2a13a472c3909f46b05649bfe3210653aa693af61121404286bbdd42",
+    "version": "1.1.6",
+    "url": "https://desktopdownload.flowus.cn/production/windows/x64/FlowUs%20Setup%201.1.6.exe#dl.7z",
+    "hash": "003476c8361b595ab49aec1130b6f418e57b0447749d2bd9be1649204ecc6d5f",
     "bin": "FlowUs.exe",
     "persist": "users",
     "installer": {
