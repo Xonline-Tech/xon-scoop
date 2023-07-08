@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.ultraiso.com/main.html",
     "description": "UltraISO软碟通是一款功能强大、方便实用、老牌优秀的光盘映像文件制作/编辑/转换工具",
-    "version": "9.7.6.3829",
+    "version": "9.7.6.3860",
     "url": "https://www.ultraiso.com/uiso9_pe.exe",
-    "hash": "26e3139f6ac209981c0ed5fd95d4e0c43f7dd82eeddaaf3e6585cbfcb0f95ca3",
+    "hash": "f851e2f620d7445a4a1140aaf2e2366b9d6bacd166b5dca21bc28a05489473ee",
     "innosetup": true,
     "bin": "UltraISO.exe",
     "checkver": {
