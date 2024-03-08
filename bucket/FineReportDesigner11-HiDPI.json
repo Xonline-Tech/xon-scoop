@@ -3,7 +3,7 @@
     "description": "领先的企业级Web报表工具,专为企业数据分析而设计",
     "homepage": "https://www.finereport.com/",
     "license": "Proprietary",
-    "url": "https://fine-build.oss-cn-shanghai.aliyuncs.com/finereport/11.0/stable/exe/windows_x64_FineReport-CN-jdk11.exe#/setup.exe",
+    "url": "https://official-download.oss-cn-shanghai.aliyuncs.com/finereport/11.0/stable/exe/windows_x64_FineReport-CN-jdk11.exe#/setup.exe",
     "hash": "f0a7dc655ffa26839df46460926ec9b587b4b80a053c0609ec52938b0c8e75cb",
     "installer": {
         "script": [
@@ -23,6 +23,6 @@
         "regex": "<h3>FineReport (11.[\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://fine-build.oss-cn-shanghai.aliyuncs.com/finereport/$matchShort/stable/exe/windows_x64_FineReport-CN-jdk11.exe#/setup.exe"
+        "url": "https://official-download.oss-cn-shanghai.aliyuncs.com/finereport/$majorVersion.$minorVersion/stable/exe/windows_x64_FineReport-CN-jdk11.exe#/setup.exe"
     }
 }
