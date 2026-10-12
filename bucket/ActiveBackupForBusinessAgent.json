@@ -1,5 +1,5 @@
 {
-    "version": "3.2.1-5059",
+    "version": "3.2.2-5554",
     "description": "保护 Windows 或 Linux 计算机和虚拟机上的数据、应用程序和系统设置。",
     "homepage": "https://www.synology.cn/zh-cn/dsm/feature/active-backup-business",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://global.download.synology.com/download/Utility/ActiveBackupBusinessAgent/3.2.1-5059/Windows/x86_64/Synology%20Active%20Backup%20for%20Business%20Agent-3.2.1-5059-x64.msi",
-            "hash": "4b4486ce3e18457f0133bb7bb019a82ab65275ab5332c222ea1f71707cb13b00"
+            "url": "https://global.download.synology.com/download/Utility/ActiveBackupBusinessAgent/3.2.2-5554/Windows/x86_64/Synology%20Active%20Backup%20for%20Business%20Agent-3.2.2-5554-x64.msi",
+            "hash": "59a73958ef0529712cc31cc58b3c1f1a5b9cc9ad11e9e2293a4666462f2bd1c0"
         },
         "32bit": {
-            "url": "https://global.download.synology.com/download/Utility/ActiveBackupBusinessAgent/3.2.1-5059/Windows/i686/Synology%20Active%20Backup%20for%20Business%20Agent-3.2.1-5059-x86.msi",
-            "hash": "d733981af41914d7a22eb05cfa47667b7bf80c030cfe6003bd531ebb3a767877"
+            "url": "https://global.download.synology.com/download/Utility/ActiveBackupBusinessAgent/3.2.2-5554/Windows/i686/Synology%20Active%20Backup%20for%20Business%20Agent-3.2.2-5554-x86.msi",
+            "hash": "3828edd9f8f468162b26608d54d6b242ffc5d7abef24025895f8b4f0aea05ed1"
         }
     },
     "shortcuts": [
